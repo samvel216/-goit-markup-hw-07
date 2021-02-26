@@ -1,0 +1,93 @@
+/*Общие стили секции*/
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients-ul {
+  display: inline-flex;
+}
+/* Стили clients-link*/
+.clients-link {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  display: flex;
+
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border-color: var(--nav-color);
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & .clients-icon {
+    fill: var(--nav-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus {
+    border-color: var(--nav-color);
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus .clients-icon {
+    fill: var(--nav-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+/* Стили clients-li */
+.clients-li {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.clients-icon {
+  fill: #afb1b8;
+}
+/*Cтили иконок*/
+.icon1 {
+  width: 44px;
+  height: 49px;
+}
+.icon2 {
+  width: 40px;
+  height: 52px;
+}
+.icon3 {
+  width: 41px;
+  height: 43px;
+}
+.icon4 {
+  width: 80px;
+  height: 42px;
+}
+.icon5 {
+  width: 59px;
+  height: 47px;
+}
+.icon6 {
+  width: 88px;
+  height: 45px;
+}

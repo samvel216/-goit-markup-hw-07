@@ -1,0 +1,44 @@
+.section-hero {
+  background-color: var(--background);
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 200px 0px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fons.jpg);
+  background-repeat: no-repeat;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-title {
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+.hero-button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  background-color: var(--nav-color);
+  min-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: var(--nav-color);
+}

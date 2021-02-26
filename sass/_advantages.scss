@@ -1,0 +1,49 @@
+/*Общие стили секции*/
+.section-advantages {
+  padding-right: 215px;
+  padding-left: 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.advantages-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--no-primary-color);
+}
+.advantages-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+.advantages-div {
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Стили  advantages-list*/
+.advantages-list {
+  display: flex;
+
+  & .item {
+    margin-right: 30px;
+  }
+  & .item:last-child {
+    margin: 0px;
+  }
+}

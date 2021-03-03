@@ -26,35 +26,24 @@
   justify-content: center;
   align-items: center;
 
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
     border-color: var(--nav-color);
-
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  & .clients-icon {
+  &:hover .clients-icon {
     fill: var(--nav-color);
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:focus {
     border-color: var(--nav-color);
-
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:focus .clients-icon {
     fill: var(--nav-color);
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
 /* Стили clients-li */
 .clients-li {
   margin-right: 30px;
@@ -65,6 +54,10 @@
 }
 .clients-icon {
   fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Cтили иконок*/
 .icon1 {

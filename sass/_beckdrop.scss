@@ -29,8 +29,9 @@
   height: 11px;
   align-items: center;
   justify-content: center;
+  fill: var(--no-primary-color);
+  color: var(--no-primary-color);
 }
-
 .modal-link-svg {
   display: inline-flex;
   position: absolute;
@@ -44,4 +45,9 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+
+  &:hover .modal-cross-svg,
+  &:focus .modal-cross-svg {
+    fill: var(--nav-color);
+  }
 }

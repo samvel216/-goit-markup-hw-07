@@ -1,4 +1,3 @@
-/*Общие стили секции*/
 .section-team {
   padding-top: 94px;
   background: #f5f4fa;
@@ -13,6 +12,32 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-fill);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-list {
+  display: flex;
+
+  & .item:last-child {
+    margin: 0px;
+  }
+  & .item {
+    margin-right: 30px;
+    background-color: var(--white);
+    padding-bottom: 30px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .team-name {
   font-size: 16px;
   font-style: normal;
@@ -33,25 +58,6 @@
   letter-spacing: 0.03em;
   color: var(--no-primary-color);
 }
-
-/* Стили team-list*/
-.team-list {
-  display: flex;
-
-  & .item {
-    margin-right: 30px;
-    background-color: var(--white);
-    padding-bottom: 30px;
-    text-align: center;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-  & .item:last-child {
-    margin: 0px;
-  }
-}
-/*Стили team-li-svg*/
 .team-li-svg {
   margin-right: 10px;
 
@@ -59,7 +65,12 @@
     margin-right: 0;
   }
 }
-/*Стили team-list-svg */
+
+.team-ul-svg {
+  display: inline-flex;
+  margin-top: 16px;
+}
+
 .team-list-svg {
   justify-content: center;
   align-items: center;
@@ -69,7 +80,7 @@
   border-radius: 50%;
   background-color: var(--white-color);
 
-  transition-property: background-color;
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -82,20 +93,7 @@
   &:focus {
     background-color: var(--nav-color);
   }
-  & .team-icon {
+  &:focus .team-icon {
     fill: var(--white);
   }
-}
-.team-ul-svg {
-  display: inline-flex;
-  margin-top: 16px;
-}
-.team-icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--no-primary-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

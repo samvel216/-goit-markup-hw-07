@@ -443,34 +443,22 @@ ul {
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-color);
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-svg:hover {
   background-color: var(--nav-color);
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-svg:hover .team-icon {
   fill: var(--white);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-svg:focus {
   background-color: var(--nav-color);
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-svg:focus .team-icon {
   fill: var(--white);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Стили постоянных клиентов */
 .clients-section {

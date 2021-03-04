@@ -7,7 +7,7 @@
   --white-tel-em: rgba(255, 255, 255, 0.6);
   --border-color: #ececec;
   --items-color: #eeeeee;
-  --icon-fill: #AFB1B8;
+  --icon-fill: #afb1b8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -50,4 +50,7 @@ p {
 ul {
   margin: 0px;
   padding: 0px;
+}
+img {
+  display: block;
 }

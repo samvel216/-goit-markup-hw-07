@@ -50,6 +50,9 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+img {
+  display: block;
+}
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
